@@ -160,7 +160,7 @@ for (var j = 0; j < point_number; j++) {
 // # Initialize visualization
 // # ------------------------------
 var width   = 1300
-var height  = 700
+var height  = 720
 var margin  = {top:0,bottom:0,left:0,right:0};
 
 var svg     = d3.select("body").append("svg")
@@ -266,7 +266,7 @@ mouseover_event=false
     var text = svg.append("text")
       .append("textPath")
       .attr("xlink:href", "#textPath"+count_id)
-      .html("<a href='"+label_url[count_id]+"'>"+label[count_id]+"</a>")
+      // .html("<a href='"+label_url[count_id]+"'>"+label[count_id]+"</a>")
       .attr('font-size', '30px')
       .attr('font-family', 'Source Sans Pro,sans-serif')
       .style('color', 'red')
